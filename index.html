@@ -73,7 +73,7 @@
 
   <div class="container-1">
     <video autoplay loop muted id="background-video">
-      <source src="portfolio1.mp4" type="video/mp4">
+      <source src="code.mp4" type="video/mp4">
     </video>
 
     <div class="image-place text-center">
@@ -455,11 +455,11 @@
   }
 
   #background-video {
+    margin-top: -140px;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     z-index: -1;
   }
 
@@ -530,8 +530,6 @@
     margin-right: 300px;
     text-align: center;
     padding: 20px;
-    border: 5px solid rgb(0, 204, 255);
-    border-radius: 20px;
   }
 
   .intro h1,
