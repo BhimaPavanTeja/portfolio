@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg" id="navbar" style="background-color: rgb(26, 237, 135);">
+  <nav class="navbar navbar-expand-lg" id="navbar" style="background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Pavan Teja</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -32,7 +32,7 @@
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarNav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#card-section">Projects</a>
@@ -326,6 +326,9 @@
 
 </body>
 <style>
+  body {
+    background-color: black;
+  }
 
   #special {
     background-color: white;
@@ -333,8 +336,17 @@
   }
   .main-section {
     margin: 100px;
-    background-color: white;
+    backdrop-filter: blur(10px);
     border-radius: 20px;
+  }
+  .main-section .para h2 {
+    color:white;
+  }
+  .main-section .para p {
+    color: white;
+  }
+  .main-section ul li {
+    color: white;
   }
 .sub-main {
         color: black;
@@ -431,22 +443,27 @@
 
   .nav-item {
     margin: 5px;
+    border-radius: 10px;
   }
 
   .nav-item a:hover {
-    border-radius: 7px;
-    animation: example 2s infinite;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    animation: nav-box 1s;
   }
 
-  @keyframes example {
+  @keyframes nav-box {
     0% {
-      background-color: rgb(255, 255, 255);
+      transform: scale(1);
     }
+
     50% {
-      background-color: rgb(7, 250, 246);
+      transform: scale(1.1);
     }
+
     100% {
-      background-color: rgb(255, 255, 255);
+      transform: scale(1);
     }
   }
 
@@ -548,7 +565,7 @@
     width: 100%;
     padding: 20px;
     text-align: center;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     height: 70vh;
   }
 
@@ -639,7 +656,7 @@
   }
 
   .sub-footer {
-    background-color: rgb(11, 235, 112);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     color: black;
     text-align: center;
     padding: 20px;
@@ -725,33 +742,32 @@
     });
   });
 
-  let prevScrollPos = window.pageYOffset;
+  /* let prevScrollPos = window.pageYOffset;
   var navBar = document.getElementById('navbar');
 
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
 
     if(prevScrollPos > currentScrollPos) {
-      navBar.style.backgroundColor='rgb(26, 237, 135)';
+      navBar.style.backgroundColor='linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);';
       navBar.style.transition='1s';
       navBar.style.boxShadow = '0px 2px 4px black';
     } else {
-      navBar.style.backgroundColor='rgba(26, 237, 135, 0.537)';
+      navBar.style.backgroundColor='linear-gradient(120deg, #fccb90b4 0%, #d57eeba9 100%);';
       navBar.style.transition='1s';
       navBar.style.boxShadow = '0px 0px 2px black';
     }
-
     prevScrollPos = currentScrollPos;
   };
 
   navBar.addEventListener('mouseenter', function () {
-    navBar.style.backgroundColor = 'rgb(26, 237, 135, 0.537)';
+    navBar.style.backgroundColor = 'linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);';
   });
 
   navBar.addEventListener('mouseleave', function () {
-    navBar.style.backgroundColor = 'rgb(26, 237, 135)';
+    navBar.style.backgroundColor = 'linear-gradient(120deg, #fccb90b4 0%, #d57eeba9 100%);';
   });
-
+  */
 
   /* another js codes
     function showLoading(event) {
